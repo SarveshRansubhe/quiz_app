@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
+import 'package:quiz_app/screens/quiz/quiz_screen.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -47,7 +49,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   const Spacer(flex: 1),
                   InkWell(
-                    onTap: () {},
+                    onTap: () => Get.to(const QuizScreen()),
                     child: Container(
                       alignment: Alignment.center,
                       padding: const EdgeInsets.all(kDefaultPadding * 0.75),
