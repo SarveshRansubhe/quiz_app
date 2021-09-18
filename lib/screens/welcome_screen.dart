@@ -49,7 +49,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   const Spacer(flex: 1),
                   InkWell(
-                    onTap: () => Get.to(const QuizScreen()),
+                    onTap: () => Get.to(() => const QuizScreen()),
                     child: Container(
                       alignment: Alignment.center,
                       padding: const EdgeInsets.all(kDefaultPadding * 0.75),

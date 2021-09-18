@@ -30,7 +30,7 @@ class QuestionController extends GetxController
   late bool _isAnswered = false;
   bool get isAnswered => _isAnswered;
 
-  late int _correctAns = 0;
+  late int _correctAns ;
   int get correctAns => _correctAns;
 
   late int _selectedAns;
@@ -90,7 +90,7 @@ class QuestionController extends GetxController
 
       _animationController.forward().whenComplete(nextQuestion);
     } else {
-      Get.to(const ScoreScreen());
+      Get.to(() => const ScoreScreen());
     }
   }
 
