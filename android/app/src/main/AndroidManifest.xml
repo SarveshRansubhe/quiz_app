@@ -2,7 +2,7 @@
     package="com.example.quiz_app">
    <application
         android:label="Quiz App"
-        android:icon="assets/icons/logo.png">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
